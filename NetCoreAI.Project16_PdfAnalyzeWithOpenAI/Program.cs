@@ -1,31 +1,34 @@
-﻿using HtmlAgilityPack;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System.Text;
+using UglyToad.PdfPig;
 
 class Program
 {
     private static readonly string apiKey = "YOUR_API_KEY_HERE";
 
+
     static async Task Main(string[] args)
     {
-        Console.Write("Lütfen analiz yapmak istediğiniz web sayfa URL'ini giriniz: ");
-        string inputUrl;
-        inputUrl = Console.ReadLine();
-
+        Console.WriteLine("PDF dosya yolunu giriniz:");
+        string pdfPath = Console.ReadLine();
+        Console.WriteLine("PDF analizi AI tarafından yapılıyor...");
         Console.WriteLine();
-        Console.WriteLine("Web sayfası içeriği: ");
-        string webContent = ExtractTextFromWeb(inputUrl);
-        await AnalyzeWithAI(webContent, "Web Sayfası İçeriği");
+        string pdfText = ExtractTextFromPdf(pdfPath);
+        await AnalyzeWithAI(pdfText, "PDF İçeriği");
 
-        static string ExtractTextFromWeb(string url)
+
+        static string ExtractTextFromPdf(string filePath)
         {
-            var web = new HtmlWeb();
-            var doc = web.Load(url);
-
-            var bodyText = doc.DocumentNode.SelectSingleNode("//body")?.InnerText;
-            return bodyText ?? "Sayfa içeriği okunamadı.";
+            StringBuilder text = new StringBuilder();
+            using(PdfDocument pdf = PdfDocument.Open(filePath))
+            {
+                foreach(var page in pdf.GetPages())
+                {
+                    text.AppendLine(page.Text);
+                }
+            }
+            return text.ToString();
         }
-
         static async Task AnalyzeWithAI(string text, string sourceType)
         {
             using (HttpClient client = new HttpClient())
@@ -36,9 +39,9 @@ class Program
                     model = "gpt-3.5-turbo",
                     messages = new[]
                     {
-                        new { role = "system", content = "Sen bir yapay zeka asistanısın. Kullanıcının gönderdiği metni analiz eder ve Türkçe olarak özetlersin. Yanıtlarını sadece Türkçe ver!" },
-                        new {role="user",content=$"Analyze and summarize the following {sourceType}:\n\n {text}"}
-                    }
+                new { role = "system", content = "Sen bir yapay zeka asistanısın. Kullanıcının gönderdiği metni analiz eder ve Türkçe olarak özetlersin. Yanıtların sadece Türkçe ver!" },
+                new {role="user",content=$"Analyze and summarize the following {sourceType}:\n\n {text}"}
+            }
                 };
 
                 string json = JsonConvert.SerializeObject(requestBody);
@@ -56,7 +59,10 @@ class Program
                 {
                     Console.WriteLine("Hata: " + responseJson);
                 }
+
             }
         }
+
     }
+
 }
