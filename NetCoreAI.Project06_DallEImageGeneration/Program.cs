@@ -5,7 +5,7 @@ class Program
 {
     public static async Task Main(string[] args)
     {
-        string apiKey = "YOUR_API_KEY_HERE");
+        string apiKey = "YOUR_API_KEY_HERE";
         string prompt;
         prompt = Console.ReadLine();
         using (HttpClient client = new HttpClient())

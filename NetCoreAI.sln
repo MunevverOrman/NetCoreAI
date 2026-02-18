@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36804.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreAI.Project01_ApiDemo", "NetCoreAI.Project01_ApiDemo\NetCoreAI.Project01_ApiDemo.csproj", "{415CE770-20D4-409F-B9FC-CEBDB4E56C87}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreAI.Project02_ApiConsumeUI", "NetCoreAI.Project02_ApiConsumeUI\NetCoreAI.Project02_ApiConsumeUI.csproj", "{FB148E2C-29CC-4304-BE6A-CE37B730B0E0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreAI.Project03_RapidApi", "NetCoreAI.Project03_RapidApi\NetCoreAI.Project03_RapidApi.csproj", "{71E74626-9DE7-4FE5-BB7B-A6929CB5F3E6}"
@@ -37,16 +35,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreAI.Project16_PdfAnal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreAI.Project17_GoogleCloudVisionImsgeDetection", "NetCoreAI.Project17_GoogleCloudVisionImsgeDetection\NetCoreAI.Project17_GoogleCloudVisionImsgeDetection.csproj", "{9EFEB0CF-01D6-4811-9328-D9A89A30C5E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreAI.Project18_OpenAINewsSummarizeWithRss", "NetCoreAI.Project18_OpenAINewsSummarizeWithRss\NetCoreAI.Project18_OpenAINewsSummarizeWithRss.csproj", "{5D428BE6-8C9B-4802-8467-1FC6AA04F7AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreAI.Project19_CreateStoryWithAI", "NetCoreAI.Project19_CreateStoryWithAI\NetCoreAI.Project19_CreateStoryWithAI.csproj", "{D8B3683E-B304-447C-9928-8F897DCD31A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreAI.Project20_RecipeSuggestionWithOpenAI", "NetCoreAI.Project20_RecipeSuggestionWithOpenAI\NetCoreAI.Project20_RecipeSuggestionWithOpenAI.csproj", "{C59F0586-BE87-4CF8-B3BB-4AED6F472A0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreAI.Project01_ApiDemo", "NetCoreAI.Project01_ApiDemo\NetCoreAI.Project01_ApiDemo.csproj", "{AE1C84AE-009D-488B-87B0-5A022919DC68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{415CE770-20D4-409F-B9FC-CEBDB4E56C87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{415CE770-20D4-409F-B9FC-CEBDB4E56C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{415CE770-20D4-409F-B9FC-CEBDB4E56C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{415CE770-20D4-409F-B9FC-CEBDB4E56C87}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FB148E2C-29CC-4304-BE6A-CE37B730B0E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FB148E2C-29CC-4304-BE6A-CE37B730B0E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB148E2C-29CC-4304-BE6A-CE37B730B0E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -111,6 +113,22 @@ Global
 		{9EFEB0CF-01D6-4811-9328-D9A89A30C5E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EFEB0CF-01D6-4811-9328-D9A89A30C5E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EFEB0CF-01D6-4811-9328-D9A89A30C5E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D428BE6-8C9B-4802-8467-1FC6AA04F7AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D428BE6-8C9B-4802-8467-1FC6AA04F7AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D428BE6-8C9B-4802-8467-1FC6AA04F7AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D428BE6-8C9B-4802-8467-1FC6AA04F7AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8B3683E-B304-447C-9928-8F897DCD31A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8B3683E-B304-447C-9928-8F897DCD31A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8B3683E-B304-447C-9928-8F897DCD31A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8B3683E-B304-447C-9928-8F897DCD31A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C59F0586-BE87-4CF8-B3BB-4AED6F472A0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C59F0586-BE87-4CF8-B3BB-4AED6F472A0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C59F0586-BE87-4CF8-B3BB-4AED6F472A0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C59F0586-BE87-4CF8-B3BB-4AED6F472A0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE1C84AE-009D-488B-87B0-5A022919DC68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE1C84AE-009D-488B-87B0-5A022919DC68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE1C84AE-009D-488B-87B0-5A022919DC68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE1C84AE-009D-488B-87B0-5A022919DC68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

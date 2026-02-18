@@ -11,7 +11,7 @@ using NetCoreAI.Project01_ApiDemo.Context;
 namespace NetCoreAI.Project01_ApiDemo.Migrations
 {
     [DbContext(typeof(ApiContext))]
-    [Migration("20251229220014_mig1")]
+    [Migration("20260217234716_mig1")]
     partial class mig1
     {
         /// <inheritdoc />
@@ -19,12 +19,12 @@ namespace NetCoreAI.Project01_ApiDemo.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.13")
+                .HasAnnotation("ProductVersion", "8.0.24")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("NetCoreAI.Project01_ApiDemo.Entities.Customer", b =>
+            modelBuilder.Entity("NetCoreAI.Project1_ApiDemo.Entities.Customer", b =>
                 {
                     b.Property<int>("CustomerId")
                         .ValueGeneratedOnAdd()
