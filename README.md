@@ -4,33 +4,33 @@ Bu projede C# ve .NET kullanarak 20+ farklı yapay zeka entegrasyonu geliştirdi
 
 📌 Kullanılan Teknolojiler
 
-.NET 3 / .NET 5 / .NET 6 / .NET 8 / .NET 9
+🔹.NET 3 / .NET 5 / .NET 6 / .NET 8 / .NET 9
 
-C#
+🔹C#
 
-RESTful API
+🔹RESTful API
 
-JSON
+🔹JSON
 
-HttpClient
+🔹HttpClient
 
-Swagger
+🔹Swagger
 
-Entity Framework (bazı senaryolarda)
+🔹Entity Framework (bazı senaryolarda)
 
-API Consume (RapidAPI vb.)
+🔹API Consume (RapidAPI vb.)
 
 🤖 Kullanılan Yapay Zeka Servisleri
 
-OpenAI
+🔹OpenAI
 
-Google Cloud
+🔹Google Cloud
 
-Microsoft Azure
+🔹Microsoft Azure
 
-RapidAPI
+🔹RapidAPI
 
-Tesseract
+🔹Tesseract
 
 📚 Proje İçeriği (20 AI Entegrasyonu)
 1. API Uygulaması Geliştirme
@@ -97,14 +97,37 @@ Harici API’leri .NET ile kullanma
 🔹 Büyük veri (PDF / Makale) özetleme teknikleri
 🔹 AI destekli içerik üretimi geliştirme
 
-<img width="1473" height="542" alt="webscraping" src="https://github.com/user-attachments/assets/71f40949-46b8-4205-838b-64ceabf15c9b" />
-<img width="1473" height="542" alt="webscraping" src="https://github.com/user-attachments/assets/71f40949-46b8-4205-838b-64ceabf15c9b" />
-<img width="1806" height="920" alt="transkripsiyon" src="https://github.com/user-attachments/assets/524b35e1-5a0e-45b5-87f4-4da15043e6e3" />
-<img width="1806" height="920" alt="transkripsiyon" src="https://github.com/user-attachments/assets/524b35e1-5a0e-45b5-87f4-4da15043e6e3" />
-<img width="1335" height="478" alt="tesseract" src="https://github.com/user-attachments/assets/adb1c39e-5aff-4af2-9902-cdaae0d569c8" />
-<img width="1335" height="478" alt="tesseract" src="https://github.com/user-attachments/assets/adb1c39e-5aff-4af2-9902-cdaae0d569c8" />
-<img width="1487" height="752" alt="rss" src="https://github.com/user-attachments/assets/09ba72cf-4181-49e6-881b-7b5fbbaa1651" />
-<img width="1487" height="752" alt="rss" src="https://github.com/user-attachments/assets/09ba72cf-4181-49e6-881b-7b5fbbaa1651" />
-<img width="1482" height="623" alt="pdf analz" src="https://github.com/user-attachments/assets/55584c47-a413-462c-84f3-ce5cf24fda69" />
-<img width="1482" height="623" alt="pdf analz" src="https://github.com/user-attachments/assets/55584c47-a413-462c-84f3-ce5cf24fda69" />
+<img width="1067" height="861" alt="dalle" src="https://github.com/user-attachments/assets/5bd6d04b-5add-4cb9-952c-1ed469a1ce3b" />
+<img width="1493" height="571" alt="dalle console" src="https://github.com/user-attachments/assets/b8e01422-a82f-4798-8338-8d155e2ecf9f" />
+<img width="780" height="842" alt="aiyemek" src="https://github.com/user-attachments/assets/aefa823e-5577-4725-a426-52965b794f13" />
+
+
+
+
+<img width="1473" height="542" alt="webscraping" src="https://github.com/user-attachments/assets/dec2a0d5-b38f-4621-9e1d-6df86f562b95" />
+<img width="1806" height="920" alt="transkripsiyon" src="https://github.com/user-attachments/assets/bbfdadac-4129-440e-ac17-c5f5569fc16c" />
+<img width="1335" height="478" alt="tesseract" src="https://github.com/user-attachments/assets/508ebe0b-29ef-498d-baac-abaacc8f88e1" />
+<img width="1487" height="752" alt="rss" src="https://github.com/user-attachments/assets/2fe64029-c3ac-424b-ae6e-99d13fb03e3b" />
+<img width="1482" height="623" alt="pdf analz" src="https://github.com/user-attachments/assets/9d00a3e4-0334-4012-b799-64fc6b572dd4" />
+<img width="1468" height="622" alt="openai translate" src="https://github.com/user-attachments/assets/073b5a28-3c94-46ad-8c2c-dfc236fa5ff9" />
+<img width="1491" height="727" alt="openai chatlesşme" src="https://github.com/user-attachments/assets/abacd351-cf36-4fb1-b321-96b07d3945f6" />
+<img width="1910" height="875" alt="makale özet" src="https://github.com/user-attachments/assets/14fad95e-1dac-47f5-bc29-701af4ce87d2" />
+<img width="1485" height="747" alt="hikaye olustr" src="https://github.com/user-attachments/assets/81d48e97-9244-4b38-9f1e-eba7a4da4541" />
+<img width="1513" height="637" alt="Ekran görüntüsü 2026-02-08 202204" src="https://github.com/user-attachments/assets/67fa6823-12c8-42b3-946b-a169c45876a3" />
+<img width="1466" height="595" alt="duygudurumu2" src="https://github.com/user-attachments/assets/ac718c88-69d8-4cae-9f8c-f5b67a198a5e" />
+<img width="1476" height="527" alt="duygu durumu3" src="https://github.com/user-attachments/assets/18c38066-570d-4d9e-b0ca-57a1cd5f7b45" />
+<img width="1483" height="613" alt="duygu durumu 1" src="https://github.com/user-attachments/assets/bdfda4fa-86c3-4fa5-b87f-4ffe7e4f004d" />
+
+
+
+
+
+
+
+
+
+
+
+
+
 
